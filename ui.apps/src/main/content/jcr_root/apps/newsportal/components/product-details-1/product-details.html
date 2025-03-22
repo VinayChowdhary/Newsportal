@@ -1,0 +1,38 @@
+<!--<div class="cards-container">
+  <sly data-sly-list.items="${resource.getChildren}">
+      <sly data-sly-list.subItems="${items.getChildren}">
+          <div class="product-card" style="background-color: ${subItems.productColor @context='styleString'}">    
+              <div class="product-image">
+                  <img src="${subItems.productImage}" alt="${subItems.productTitle}" />
+              </div>
+              <div class="product-info">
+                  <h2>${subItems.productTitle}</h2>
+                  <p>Expiry Date: ${'yyyy-MM-dd' @format=subItems.expiryDate}</p>
+                  <p>Price: ₹${subItems.productPrice}</p>
+                  <p>Color:
+                      ${subItems.productColor};
+                  </p>
+                  <p>Tags:
+                      <sly data-sly-list.tag="${subItems.tagField}">
+                          <span class="tag">${tag}</span>
+                      </sly>
+                  </p>
+              </div>
+          </div>
+      </sly>
+  </sly>
+</div> -->
+
+
+<div class="cards-container">
+    <sly data-sly-list.items="${resource.getChildren}">
+        <sly data-sly-list.subItems="${items.getChildren}">
+          <sly data-sly-use.pc="product-card.html">
+              <sly data-sly-call="${pc.productCard @childObject=subItems}">
+              </sly>
+          </sly>
+        </sly>
+    </sly>
+</div>
+  
+

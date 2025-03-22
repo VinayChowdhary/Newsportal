@@ -1,0 +1,14 @@
+<sly data-sly-use.productDetailsModel="com.bhasaka.newsportal.core.models.ProductDetailsModel"/>
+<div class="cards-container">
+    <div class="product-card">
+        <div class="product-info">
+            <h1>${productDetailsModel.productTitle}</h1>
+            <div class="product-image">
+                <img src="${productDetailsModel.productImage}" />
+            </div>
+            <p>${productDetailsModel.productDescription @context='html'}</p>
+            <p>Price: ₹${productDetailsModel.productPrice}</p>
+            <p>Weight: ${productDetailsModel.productWeight}gms</p>
+        </div>
+    </div>
+</div>

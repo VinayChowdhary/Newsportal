@@ -1,0 +1,50 @@
+<section class="itc-tab">
+   <div class="container">
+      <ul class="itc-tab-link nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+         <li class="nav-item mr-md-4 mr-3" role="presentation">
+            <a class="nav-link active" id="product-tab-1" data-toggle="pill" data-target="#product-tab-1-content"
+               type="button" role="tab" aria-controls="#product-tab-1-content"
+               aria-selected="true">${properties.heading}</a>
+         </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+         <div class="tab-pane fade show active" id="product-tab-1-content" role="tabpanel"
+            aria-labelledby="pills-home-tab">
+            <div>
+               <section class="product-slider">
+                  <div class="container">
+                     <div class="recommended-products " style="max-width: 1098px; margin: 0 auto;">
+                        <div class="items product-slider-item slick-initialized slick-slider">
+                           <div aria-live="polite" class="slick-list draggable"
+                              data-sly-list.items="${resource.getChildren}">
+                              <div class="slick-track"
+                                 style="opacity: 1; width: 15000px; transform: translate3d(-7px, 0px, 0px);"
+                                 role="listbox" data-sly-list.subItems="${items.getChildren}">
+                                 <div class="card card1 slick-slide slick-current slick-active" data-slick-index="0"
+                                    aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00">
+                                    <div class="card-header">
+                                       <img loading="lazy" data-sly-test="${subItems.productImage}" src="${subItems.productImage}" class="">
+                                       <div class="btn-wrapper">
+                                          <a target="true" id="shopnow-Jaggery Ragi Cookies 100g"
+                                             href="${subItems.ctaLink}" class="btn slider-btn buy-now" tabindex="0"
+                                             test>${subItems.ctaLabel}
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="card-slider-content" data-sly-test=${subItems.productTitle}>
+                                       <h6 test>${subItems.productTitle}</h6>
+                                       <p>${subItems.productDesc @context='html'}</p>
+                                       <h5>Rs. ${subItems.productPrice}</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

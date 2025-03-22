@@ -1,0 +1,19 @@
+<sly data-sly-use.recentProductsModel="com.bhasaka.newsportal.core.models.RecentProductsModel" />
+<!-- <sly data-sly-use.recentProductsModel="com.bhasaka.newsportal.core.models.RecentProductModel2" /> -->
+
+<div class="cards-container">
+    <sly data-sly-list.product="${recentProductsModel.productListPages}">
+        <div class="product-card">
+            <div class="product-info">
+                <h1><strong>${product.productTitle}</strong></h1>
+                <div class="product-image">
+                    <img src="${product.productImage}" />
+                </div>
+                <a href="${product.ctaLink}" class="product-button" target="_blank">${product.ctaLabel}</a>
+                <p>${product.productDescription @context='html'}</p>
+                <p>Price: ₹${product.productPrice}</p>
+                <p>Weight: ${product.productWeight}gms</p>
+            </div>
+        </div>
+    </sly>
+</div>

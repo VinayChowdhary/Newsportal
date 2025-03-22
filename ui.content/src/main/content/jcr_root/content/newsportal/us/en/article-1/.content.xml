@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2025-02-11T11:38:21.588+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2025-02-10T12:35:18.719+05:30"
+        cq:lastReplicated_publish="{Date}2025-02-10T12:35:18.719+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/newsportal/settings/wcm/templates/article-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Article-1"
+        jcr:uuid="f3ba4fe6-dc8e-4fbb-a7c2-7807442a2126"
+        sling:resourceType="newsportal/components/article-page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="newsportal/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="newsportal/components/container">
+                <article_details
+                    jcr:created="{Date}2025-02-09T21:53:59.016+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-02-11T09:13:42.718+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="newsportal/components/article-details"
+                    articleDesc="The BJP staged a thumping comeback in Delhi after more than 26 years as it won 48 of the 70 seats in the Assembly polls on Saturday (February 8, 2025). The Aam Aadmi Party (AAP) secured victories from 22 seats and the Congress drew a blank for a third straight time.&#xd;&#xa;&#xd;&#xa;AAP candidate from Matia Mahal Aaley Mohammad Iqbal registered the highest victory margin of 42,724 votes in the polls, defeating BJP’s Deepti Indora, according to the Election Commission’s (EC) data."
+                    articleImage="/content/dam/vinay/images/bjp image.jpg"
+                    articleTitle="Delhi Elections Results"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

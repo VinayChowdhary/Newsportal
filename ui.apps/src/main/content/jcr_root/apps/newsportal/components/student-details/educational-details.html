@@ -1,0 +1,7 @@
+<sly data-sly-template.educationalTemplate="${@educationalModelObject}">
+    <h2>Educational Details</h2>
+    <p><strong>College Name:</strong> ${educationalModelObject.collegeName}</p>
+    <p><strong>Percentage:</strong> ${educationalModelObject.percentage}</p>
+    <p><strong>Passout Date:</strong> ${'dd-MM-yyyy' @format=educationalModelObject.passedOutDate}</p>
+    <p><strong>Backlog Status:</strong> ${educationalModelObject.backlogStatus}</p>
+</sly>

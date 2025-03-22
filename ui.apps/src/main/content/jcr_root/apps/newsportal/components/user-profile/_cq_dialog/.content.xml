@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="User Profile Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <user-image2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/path"
+                fieldLabel="User Image2"
+                name=" ./userImage2"
+                rootPath="/content/dam/vinay/images"/>
+            <user-name
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="User Name"
+                name=" ./userName"/>
+            <user-description
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                fieldLabel="User Description"
+                name=" ./userDesc"/>
+            <user-image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                fieldLabel="User Image"
+                name=" ./userImage"
+                rootPath="/content/dam/vinay/images">
+                <image
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                    fieldLabel="Image"
+                    name=" ./image"
+                    rootPath="/content/dam/vinay/images"/>
+                <user-agreement
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    name=" ./userAgreement"
+                    text="Accept License Agreement"
+                    value="{Boolean}true"/>
+                <user-age
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                    fieldLabel="Age "
+                    name=" ./userAge"/>
+                <user-dob
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                    fieldLabel="Date Of Birth"
+                    name=" ./userDOB"/>
+                <user-languages
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldLabel="Languages Known"
+                    name=" ./userLanguages">
+                    <items jcr:primaryType="nt:unstructured">
+                        <Telugu
+                            jcr:primaryType="nt:unstructured"
+                            text="Telugu"
+                            value="telugu"/>
+                        <Hindi
+                            jcr:primaryType="nt:unstructured"
+                            text="Hindi"
+                            value="hindi"/>
+                        <English
+                            jcr:primaryType="nt:unstructured"
+                            text="English"
+                            value="english"/>
+                    </items>
+                </user-languages>
+                <user-movies
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                    fieldLabel="Favorite Movies">
+                    <field
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        name=" ./movies"/>
+                </user-movies>
+            </user-image>
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                fieldLabel="Image"
+                name=" ./image"
+                rootPath="/content"/>
+            <user-agreement
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                name=" ./userAgreement"
+                text="Accept License Agreement"
+                value="{Boolean}true"/>
+            <user-age
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                fieldLabel="Age "
+                name=" ./userAge"/>
+            <user-dob
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                fieldLabel="Date Of Birth"
+                name=" ./userDOB"/>
+            <user-languages
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                fieldLabel="Languages Known"
+                name=" ./userLanguages">
+                <items jcr:primaryType="nt:unstructured">
+                    <Telugu
+                        jcr:primaryType="nt:unstructured"
+                        text="Telugu"
+                        value="telugu"/>
+                    <Hindi
+                        jcr:primaryType="nt:unstructured"
+                        text="Hindi"
+                        value="hindi"/>
+                    <English
+                        jcr:primaryType="nt:unstructured"
+                        text="English"
+                        value="english"/>
+                </items>
+            </user-languages>
+            <user-movies
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                fieldLabel="Favorite Movies">
+                <field
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    name=" ./movies"/>
+            </user-movies>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,14 @@
+{
+  "article-details": {
+    "articleTitle": "Title 1",
+    "articleDesc": "Dummy Description",
+    "articleImage": "/content/newsportal/dam/vinay/vinay-image/",
+    "articleExpiry": "2025-04-18T00:00:00.000+05:30"
+  },
+  "expired-article-details": {
+    "articleTitle": "Title 1",
+    "articleDesc": "Dummy Description",
+    "articleImage": "/content/newsportal/dam/vinay/vinay-image/",
+    "articleExpiry": "2024-04-18T00:00:00.000+05:30"
+  }
+}

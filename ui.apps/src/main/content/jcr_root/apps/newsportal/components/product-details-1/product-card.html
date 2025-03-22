@@ -1,0 +1,20 @@
+<sly data-sly-template.productCard="${@childObject}">
+    <div class="product-card" style="background-color: ${childObject.productColor @context='styleString'}">
+        <div class="product-image">
+            <img src="${childObject.productImage}" alt="${childObject.productTitle}" />
+        </div>
+        <div class="product-info">
+            <h2>${childObject.productTitle}</h2>
+            <p>Expiry Date: ${'dd-MM-yyyy' @format=childObject.expiryDate}</p>
+            <p>Price: ₹${childObject.productPrice}</p>
+            <p>Color:
+                ${childObject.productColor};
+            </p>
+            <p>Tags:    
+                <sly data-sly-list.tag="${childObject.tagField}">
+                    <span class="tag">${tag}</span>
+                </sly>
+            </p>
+        </div>
+    </div>
+</sly>

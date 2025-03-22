@@ -1,0 +1,11 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.all @ categories='newsportal.copyright'}" />
+<sly data-sly-use.copyrightModel="com.bhasaka.newsportal.core.models.CopyRightsModel" />
+
+<div id="copyRightsContainer" data-page-path="${copyrightModel.getCurrentPagePath}">
+    <div class="content">
+        <p id="componentText"></p>
+        <p id="copyrightText"></p>
+    </div>
+</div>
+

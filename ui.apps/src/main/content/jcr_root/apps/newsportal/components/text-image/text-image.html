@@ -1,0 +1,10 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.all @ categories='newsportal.image'}" />  
+
+<sly data-sly-use.textImageModel="com.bhasaka.newsportal.core.models.TextImageModel"/>
+<div class="text-image-container ${textImageModel.textAlignment}">
+    <div class="text-content">${textImageModel.description @context="html"}</div>
+    <div class="image-content">
+        <sly data-sly-resource="${'np-image' @resourceType='/apps/newsportal/components/image/'}"/>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/newsportal/settings/wcm/templates/my-account-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="newsportal/components/myaccount-page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="newsportal/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:created="{Date}2025-02-10T16:16:10.915+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-10T16:18:34.999+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="newsportal/components/form/container"
+                action="/content/usergenerated/conf/newsportal/settings/wcm/templates/my-account-page/structure/cq-gen1739184370915/"
+                actionType="foundation/components/form/actions/store"/>
+        </root>
+    </jcr:content>
+</jcr:root>

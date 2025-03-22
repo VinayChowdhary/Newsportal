@@ -1,0 +1,8 @@
+<div class="accordion">
+    <sly data-sly-list.item="${resource.getChildren}">
+        <div class="accordion-item">
+            <div class="accordion-header">${item.title}</div>
+            <div class="accordion-content">${item.description}</div>
+        </div>
+    </sly>
+</div>

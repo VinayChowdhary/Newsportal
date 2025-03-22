@@ -1,0 +1,11 @@
+<sly data-sly-use.personalDetails="personal-details.html" />
+<sly data-sly-use.educationalDetails="educational-details.html" />
+<sly data-sly-use.model="com.bhasaka.newsportal.core.models.StudentDetailsModel" />
+<div data-sly-test="${model.detailsOption == 'personalDetails'}" class="card">
+    <sly data-sly-call="${personalDetails.personalDetailsTemplate @personalModelObject=model}" />
+</div>
+<div data-sly-test="${model.detailsOption == 'educationalDetails'}" class="card">
+    <sly data-sly-list.details="${model.educationalDetailsGroup}">
+        <sly data-sly-call="${educationalDetails.educationalTemplate @educationalModelObject=model}" />
+    </sly>
+</div>

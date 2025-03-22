@@ -1,0 +1,18 @@
+<sly data-sly-template.personalDetailsTemplate="${@personalModelObject}">
+    <h2>Personal Details</h2>
+    <p><strong>First Name:</strong> ${personalModelObject.firstName}</p>
+    <p><strong>Last Name:</strong> ${personalModelObject.lastName}</p>
+    <p><strong>Gender:</strong> ${personalModelObject.gender}</p>
+    <p><strong>Age:</strong> ${personalModelObject.age}</p>
+    <p><strong>DOB:</strong> ${'dd-MM-yyyy' @format=personalModelObject.dob}</p>
+    <img src="${personalModelObject.image}" alt="${personalModelObject.altText}" class="profile-img">
+    <p><strong>Mobile Number:</strong> ${personalModelObject.mobileNumber}</p>
+    <p><strong>Email:</strong> ${personalModelObject.email}</p>
+    <p><strong>Preferred Mode of Contact:</strong> ${personalModelObject.modeOfContact}</p>
+    <p><strong>Address:</strong> ${personalModelObject.address @context='html'}</p>
+    <div data-sly-test="${personalModelObject.maritalStatus == 'married'}">
+        <p><strong>Spouse Name :</strong> ${personalModelObject.spouseName}</p>
+        <p><strong>Spouse Age :</strong> ${personalModelObject.spouseAge}</p>
+        <p><strong>Spouse Occupation :</strong> ${personalModelObject.spouseOccupation}</p>
+    </div>
+</sly>

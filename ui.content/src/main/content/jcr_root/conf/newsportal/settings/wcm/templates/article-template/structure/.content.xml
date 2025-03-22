@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2025-02-20T11:21:25.449+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2025-03-07T11:39:55.863+05:30"
+        cq:lastReplicated_publish="{Date}2025-03-07T11:39:55.863+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/newsportal/settings/wcm/templates/article-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:uuid="9b8d6b71-b37d-4815-b274-d9438148ef83"
+        sling:resourceType="newsportal/components/article-page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="newsportal/components/container"
+            layout="responsiveGrid">
+            <experiencefragment
+                jcr:created="{Date}2025-02-20T11:20:45.436+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-20T11:21:12.432+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="newsportal/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/newsportal/us/en/site/header/master"/>
+            <container
+                jcr:created="{Date}2025-02-09T21:45:10.441+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-13T11:55:36.321+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="newsportal/components/container"
+                editable="{Boolean}true"/>
+            <experiencefragment_423652011
+                jcr:created="{Date}2025-02-20T11:20:51.668+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-20T11:21:25.441+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="newsportal/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/newsportal/us/en/site/footer/master"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

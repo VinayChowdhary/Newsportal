@@ -1,0 +1,39 @@
+.text-image-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.left-align {
+    flex-direction: row;
+}
+
+.right-align {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.image-content {
+    flex-shrink: 0;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}

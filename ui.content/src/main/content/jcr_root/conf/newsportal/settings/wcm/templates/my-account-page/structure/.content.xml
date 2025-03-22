@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2025-02-10T16:18:34.999+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/newsportal/settings/wcm/templates/my-account-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="newsportal/components/myaccount-page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="newsportal/components/container"
+            layout="responsiveGrid">
+            <title
+                jcr:created="{Date}2025-02-10T16:16:01.036+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-10T16:17:47.660+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="My Account Header"
+                sling:resourceType="newsportal/components/title"
+                linkTarget="_self"
+                type="h1"/>
+            <container
+                jcr:created="{Date}2025-02-10T16:16:10.915+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-10T16:18:30.064+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="newsportal/components/form/container"
+                editable="{Boolean}true"/>
+            <title_930377954
+                jcr:created="{Date}2025-02-10T16:16:21.649+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-10T16:18:00.363+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="My Account Footer"
+                sling:resourceType="newsportal/components/title"
+                linkTarget="_self"
+                type="h1"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product Details Configuration"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <productTitle
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldDescription="Enter  product title"
+                fieldLabel="Product Title"
+                name="./productTitle"/>
+            <productImage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                fieldDescription="Give product image"
+                fieldLabel="Product Image"
+                name="./productImage"
+                rootPath="/content/dam/vinay/images"/>
+            <productDescription
+                cq:include="/apps/newsportal/components/richtextcomponent"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                fieldDescription="Enter product description"
+                fieldLabel="Product Description"
+                name="./productDescription"
+                useFixedInlineToolbar="{Boolean}true"/>
+            <productPrice
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                fieldDescription="Enter product price"
+                fieldLabel="Product Price"
+                name="./productPrice"/>
+            <productWeight
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                fieldDescription="Enter product weight"
+                fieldLabel="Product Weight"
+                name="./productWeight"/>
+        </items>
+    </content>
+</jcr:root>

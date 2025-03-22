@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    cq:include="/apps/newsportal/components/richtextcomponent"
+    jcr:primaryType="cq:Component"
+    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+    fieldLabel="Description"
+    name="./desc"
+    useFixedInlineToolbar="{Boolean}true"/>
